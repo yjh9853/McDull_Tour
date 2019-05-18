@@ -1,0 +1,837 @@
+*{margin:0;padding:0}
+.top{
+    position:relative;
+    background:firebrick;
+    width:100%;
+    height: 80px;
+}
+.img{
+    width:220px;
+    height:80px;
+    position:absolute;
+    left:50px;
+}
+.text{
+    color:white;
+    position:absolute;
+    top:40px;
+    right:60px;
+    font-size:14px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+#nov{
+    width: 100%;
+    height: 28px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    /*background-color: #e2d9cb;*/
+    background-color: #ffffff;
+    position: relative;
+}
+#menu{
+    width: 890px;
+    height: 26px;
+    /*margin: 0 auto;*/
+    /* border: 1px solid #999;*/
+    position: absolute;
+    left: 300px;
+    z-index: 100;
+}
+#menu ul{
+	z-index:100;
+    margin: 0;
+    padding: 0;
+    list-style: none;/* Òþ²ØÄ¬ÈÏÁÐ±í·ûºÅ*/
+}
+#menu ul li{
+    width: 120px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    /*border-bottom: 1px solid #999;*/
+    border-right: 1px solid #ff0c6f;
+    position: relative;
+    float: left;
+    /*background: #cda8ff;*/
+    background-color: #ffffff;
+}
+#menu a{
+    width: 120px;
+    height: 26px;
+    /*background-color: #dfdfe2;*/
+    background-color: #ffffff;
+    display: block;
+    font-size: 14px;
+    color: #666;
+    font-family: Î¢ÈíÑÅºÚ, sans-serif;
+    text-decoration: none;/*Òþ²Ø³¬Á®¼ÛÄ¬ÈÏÏÂ»®Ïß*/
+}
+#menu .right{
+    width: 150px;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: firebrick;
+    padding-left: 15px;
+    font-family: Î¢ÈíÑÅºÚ, sans-serif;
+    text-decoration: none;/*Òþ²Ø³¬Á®¼ÛÄ¬ÈÏÏÂ»®Ïß*/
+}
+#menu a:hover{
+    color:#F00;
+    font-size: 14px;
+}
+#menu ul li ul{
+    display: none;/*Ä¬ÈÏÒþ²Ø*/
+    top:26px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+//position: absolute;
+//left: 100px;
+}
+#menu ul li:hover ul{
+    display: block;
+}
+#menu ul li:hover ul li a{
+    display: block;
+}
+#menu ul li ul li a:hover{
+    color: white;
+    /*background-color: #b2726d;*/
+    background-color: firebrick;
+}
+
+.wrap{
+    width:100%;
+    height:500px;
+    margin:0 auto;
+    z-index:1;
+}
+.list{
+    width:100%;
+    height:450px;
+    list-style: none;
+    position:realtive;
+}
+.item{
+    position:absolute;
+    width:100%;
+    height:450px;
+    color:white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all .5s;
+}
+.b1{
+    width:100%;
+    height:470px;
+    cursor: pointer;
+}
+.b2{
+    width:100%;
+    height:470px;
+    cursor: pointer;
+}
+.b3{
+    width:100%;
+    height:470px;
+    cursor: pointer;
+}
+.b4 {
+    width: 100%;
+    height: 470px;
+    cursor: pointer;
+}
+.b5{
+    width:100%;
+    height:470px;
+    cursor: pointer;
+}
+.btn{
+    position:absolute;
+    width:50px;
+    height:80px;
+    top:280px;
+    z-index:100;
+    cursor: pointer;
+}
+#goPre{
+    left:50px;
+}
+#goNext{
+    right:50px;
+}
+.item.active{
+    z-index:10;
+    opacity: 1;
+}
+.pointlist{
+    position: absolute;
+    list-style: none;
+    top:550px;
+    right:50px;
+    z-index: 1000;
+}
+.point{
+    width:7px;
+    height:7px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 100%;
+    float:left;
+    margin-right: 15px;
+    border-style: solid;
+    border-width:2px;
+    border-color:lightgrey;
+    cursor:pointer;
+}
+.point.active{
+    background-color: rgba(255,255,255,0.2);
+}
+#b{
+    position:relative;
+    width:100%;
+    height: 400px;
+}
+#b .texta{
+    margin-top: 45px;
+    text-align: center;
+    color:firebrick;
+    font-size:19px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+#b .textb{
+    margin-top: 55px;
+    text-align: center;
+    color:gray;
+    font-size:15px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+#b .img1{
+    position:absolute;
+    top:220px;
+    left:300px;
+    cursor: pointer;
+}
+#b .text1{
+    color:darkgray;
+    position:absolute;
+    top:300px;
+    left:280px;
+    cursor: pointer;
+}
+#b .img2{
+    position:absolute;
+    top:220px;
+    left:510px;
+    cursor: pointer;
+}
+#b .text2{
+    color:darkgray;
+    position:absolute;
+    top:300px;
+    left:490px;
+    cursor: pointer;
+}
+#b .img3{
+    position:absolute;
+    top:220px;
+    left:710px;
+    cursor: pointer;
+}
+#b .text3{
+    color:darkgray;
+    position:absolute;
+    top:300px;
+    left:690px;
+    cursor: pointer;
+}
+#b .img4{
+    position:absolute;
+    top:220px;
+    left:910px;
+    cursor: pointer;
+}
+#b .text4{
+    color:darkgray;
+    position:absolute;
+    top:300px;
+    left:890px;
+    cursor: pointer;
+}
+.c{
+    height: 1400px;
+}
+.c1{
+    float: left;
+    width:41.5%;
+
+}
+.c1 li{
+    width: 450px;
+    height: 300px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+.c1 .left{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left .img1{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c1 .left_bottom{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom .text1{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+  }
+.left_bottom .text2{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+    font-weight: 500;
+}
+.left_bottom .text0:hover{
+    font-weight: 600;
+}
+.c2{
+    float: left;
+    width:58.5%;
+
+}
+.c2 li{
+    width: 450px;
+    height: 300px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+.c2 .left2{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left2 .img2{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left2 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c2 .left_bottom2{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom2 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom2 .text3{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom2 .text4{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom2 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom2 .text0:hover{
+    font-weight: 600;
+}
+.c1 .left3{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left3 .img3{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left3 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c1 .left_bottom3{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom3 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom3 .text5{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom3 .text6{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom3 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom3 .text0:hover{
+    font-weight: 600;
+}
+.c2 .left4{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left4 .img4{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left4 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c2 .left_bottom4{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom4 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom4 .text7{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom4 .text8{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom4 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom4 .text0:hover{
+    font-weight: 600;
+}
+.c1 .left5{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left5 .img5{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left5 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c1 .left_bottom5{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom5 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom5 .text9{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom5 .text10{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom5 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom5 .text0:hover{
+    font-weight: 600;
+}
+.c2 .left6{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left6 .img6{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left6 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c2 .left_bottom6{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom6 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom6 .text11{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom6 .text12{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom6 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom6 .text0:hover{
+    font-weight: 600;
+}
+
+.c1 .left7{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left7 .img7{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left7 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c1 .left_bottom7{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom7 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom7 .text13{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom7 .text14{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom7 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom7 .text0:hover{
+    font-weight: 600;
+}
+
+.c2 .left8{
+    margin-left: 130px;
+    width: 480px;
+    height: 220px;
+    position: relative;
+}
+.left8 .img8{
+    width: 480px;
+    height: 220px;
+    cursor: pointer;
+}
+.left8 .img0{
+    position: absolute;
+    top:10px;
+    left:5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.c2 .left_bottom8{
+    margin-left: 130px;
+    width: 478px;
+    height: 80px;
+    border:1px solid lightgrey;
+    position: relative;
+}
+.left_bottom8 img{
+    position: absolute;
+    top:15px;
+    left:8px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.left_bottom8 .text15{
+    position: absolute;
+    font-size: 14px;
+    top:15px;
+    left:55px;
+}
+.left_bottom8 .text16{
+    position: absolute;
+    font-size: 18px;
+    top:40px;
+    left:60px;
+}
+.left_bottom8 .text0{
+    position: absolute;
+    folat:right;
+    font-size: 14px;
+    color: firebrick;
+    cursor: pointer;
+    right: 0;
+    bottom: 10px;
+}
+.left_bottom8 .text0:hover{
+    font-weight: 600;
+}
+.bottom{
+    position:relative;
+    background:firebrick;
+    width:100%;
+    height: 270px;
+}
+.bottom .img0{
+    width:240px;
+    height:85px;
+    position:absolute;
+    right:130px;
+    top:70px;
+}
+.bottom a{
+    text-decoration: none;
+    width:100px;
+    height:20px;
+    position: absolute;
+    left:150px;
+    top:72px;
+    font-size:16px;
+    color:white;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+.bottom .text1{
+    color:white;
+    position:absolute;
+    top:70px;
+    left:230px;
+    font-size:15px;
+    line-height:26px;
+    font-family: Î¢ÈíÑÅºÚ;
+    cursor: pointer;
+}
+.bottom .img1{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:165px;
+    right:300px;
+}
+.bottom .text2{
+    color:white;
+    position:absolute;
+    top:165px;
+    right:150px;
+    font-size:12px;
+    line-height:18px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+.bottom .img2{
+    position:absolute;
+    top:70px;
+    left:570px;
+    cursor: pointer;
+}
+.bottom .img3{
+    position:absolute;
+    top:70px;
+    left:640px;
+    cursor: pointer;
+}
+.bottom .img4{
+    position:absolute;
+    top:70px;
+    left:710px;
+    cursor: pointer;
+}
+.bottom .text3{
+    color:white;
+    position:absolute;
+    top:130px;
+    left:140px;
+    font-size:13px;
+    line-height:26px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
